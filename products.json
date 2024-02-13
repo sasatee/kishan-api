@@ -1,18 +1,17 @@
 [
-  {
-    "binNumber": ["1","2"],
-    "categories":["Normal bin","Recyclable bin"],
-    "location": {
-      "coordinates1": [57.46653815397234, -20.176265177244126],
-      "coordinates2":[57.49627794214197, -20.234805699808483]
-    },
-    "wasteLevel": {
-      "currentStatus": "full capacity",
-      "nextStatus": "empty capacity"
-    },
-    "binCapacity": ["35 litres","60 litres"],
-    "timeSchedule": {
-      "date":["2024-02-05T12:30:00","2024-02-02T14:30:00"]
-    }
-  }
+  
+
+{
+  "body_temperature": 36.7,
+  "pulse_rate": 78,
+  "bmi": 23.4,
+  "human_presence": true,
+  "medicine_reminder": {
+    "hour": 8,
+    "minute": 30,
+    "second": 0
+ }
+}
 ]
+
+

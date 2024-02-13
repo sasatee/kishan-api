@@ -1,20 +1,32 @@
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
-  binNumber: ["String"],
-  categories: ["String"],
-  location: {
-    coordinates1: ["Number"],
-    coordinates2: ["Number"],
+  body_temperature: {
+    type: Number
   },
-  wasteLevel: {
-    currentStatus: "String",
-    nextStatus: "String",
+  pulse_rate: {
+    type: Number
   },
-  binCapacity: ["String"],
-  timeSchedule: {
-    date: ["Date"],
+  bmi: {
+    type: Number
   },
+  human_presence: {
+    type: Boolean
+  },
+  medicine_reminder: {
+    hour: {
+      type: Number
+    },
+    minute: {
+      type: Number
+    },
+    second: {
+      type: Number
+    }
+  }
 });
 
 module.exports = mongoose.model("Product", productSchema);
+
+
+
